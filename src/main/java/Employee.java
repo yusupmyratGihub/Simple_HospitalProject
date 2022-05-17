@@ -1,7 +1,7 @@
 public class Employee {
     private int personelID;
-    private String FullName;
-    private String LastName;
+    private String fullName;
+    private String lastName;
     private String country;
     private String birthDate;
     private String gender;
@@ -9,11 +9,10 @@ public class Employee {
     private int phone;
     private String email;
 
-
     public Employee(int personelID, String fullName, String lastName, String country, String birthDate, String gender, String adress, int phone, String email) {
         this.personelID = personelID;
-        FullName = fullName;
-        LastName = lastName;
+        this.fullName = fullName;
+        this.lastName = lastName;
         this.country = country;
         this.birthDate = birthDate;
         this.gender = gender;
@@ -21,6 +20,7 @@ public class Employee {
         this.phone = phone;
         this.email = email;
     }
+
 
     public int getPersonelID() {
         return personelID;
@@ -30,21 +30,8 @@ public class Employee {
         this.personelID = personelID;
     }
 
-    public String getFullName() {
-        return FullName;
-    }
 
-    public void setFullName(String fullName) {
-        FullName = fullName;
-    }
 
-    public String getLastName() {
-        return LastName;
-    }
-
-    public void setLastName(String lastName) {
-        LastName = lastName;
-    }
 
     public String getCountry() {
         return country;
@@ -94,12 +81,29 @@ public class Employee {
         this.email = email;
     }
 
+
+    public String getFullName() {
+        return fullName;
+    }
+
+    public void setFullName(String fullName) {
+        this.fullName = fullName;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+
     @Override
     public String toString() {
         return "Employee{" +
                 "personelID=" + personelID +
-                ", FullName='" + FullName + '\'' +
-                ", LastName='" + LastName + '\'' +
+                ", fullName='" + fullName + '\'' +
+                ", lastName='" + lastName + '\'' +
                 ", country='" + country + '\'' +
                 ", birthDate='" + birthDate + '\'' +
                 ", gender='" + gender + '\'' +
